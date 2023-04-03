@@ -30,3 +30,5 @@ Apos ter criado o arquivo, va para o terminal do VScode, use os seguintes comand
 "php artisan migrate"
 
 "php artisan serve"
+
+clique no link e aproveite meu projeto :D
