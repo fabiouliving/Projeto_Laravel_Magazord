@@ -5,10 +5,10 @@ O framework utilizado chama-se Laravel, que utiliza o padrão MVC.
 
 aqui estão alguns requisitos do sistema para visualizar o projeto:
 
-<p style="color:#F49191"> PHP 8.1.12 ou uma versão mais recente;
+PHP 8.1.12 ou uma versão mais recente;
 Composer 2.4.4 ou uma versão mais recente;
 MySQL 8.0.31 ou uma versão mais recente;
-</p>
+
 recomendado o uso do VScode para a visualização;
 
 Após baixar o zip do projeto, extrai os arquivos dentro de uma pasta na sua area de trabalho.
