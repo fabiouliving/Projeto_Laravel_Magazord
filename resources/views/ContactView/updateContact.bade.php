@@ -1,6 +1,6 @@
 @extends ('layouts.main')
 
-@section ('title', 'Editar Contatos')
+@section ('title', 'updatear contact')
 
 @section ('content')
 

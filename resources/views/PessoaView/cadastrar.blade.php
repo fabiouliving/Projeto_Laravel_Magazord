@@ -8,18 +8,18 @@
     <div class="container">
         <header>
             <img src="/images/logo.png" alt="" class="logo">
-            <p class="headerText">CADASTRO DE PESSOAS</p>
+            <p class="headerText">CADASTRO DE people</p>
 
         </header>
     </div>
     <div class="CorpoCadastro">
     <div class="botaoVoltar">
-                <a href="{{ url('pessoas/') }}" class="h2botao" id="CadastroPessoa">
+                <a href="{{ url('people/') }}" class="h2botao" id="CadastroPessoa">
                     Voltar
                 </a>
             </div>
         <div class="contentCadastro">
-            <form method="POST" action="{{route('pessoas.store')}}">
+            <form method="POST" action="{{route('people.store')}}">
                 @csrf
                 <div class="form-group">
                     <label for="nome" class="formText seperate" style="font-weight: 750;">Nome:</label>

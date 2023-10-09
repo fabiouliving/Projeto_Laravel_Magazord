@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Pessoa extends Model
+class People extends Model
 {
     use HasFactory;
 
-    protected $table = 'pessoas';
+    protected $table = 'people';
     protected $fillable = ['nome', 'cpf'];
-    public $timestamps = false;
+
 
     public function render(){
-        $pessoas = Pessoa::orderBy('name', 'cpf')->paginate(1);
-        return view('home', ['pessoas' => $pessoas]);
+        $people = People::orderBy('name', 'cpf')->paginate(1);
+        return view('home', ['people' => $people]);
     }
 }
 

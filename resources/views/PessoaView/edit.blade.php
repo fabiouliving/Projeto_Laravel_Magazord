@@ -8,7 +8,7 @@
     <div class="container">
         <header>
             <img src="/images/logo.png" alt="" class="logo">
-            <p class="headerText">EDITAR CONTATO</p>
+            <p class="headerText">updateAR contact</p>
 
         </header>
     </div>
@@ -20,12 +20,12 @@
                 <input type="hidden" value="{{$pessoa->id}}" name="id">
                 <div>
                 <div class="botaoVoltar">
-                <a href="{{ url('pessoas/') }}" class="h2botao" id="CadastroPessoa">
+                <a href="{{ url('people/') }}" class="h2botao" id="CadastroPessoa">
                     Voltar
                 </a>
             </div>
                     <p class="formText seperate">
-                        Editar as informações desejadas de: <span style="font-weight: bold;"> {{$pessoaupper}} </span>
+                        updatear as informações desejadas de: <span style="font-weight: bold;"> {{$pessoaupper}} </span>
                     </p>
                 </div>
                 <div class="form-group">
@@ -38,7 +38,7 @@
                     <input type="text" id="cpf" value="{{$pessoa->cpf}}" class="form-control formText seperate" name="cpf">
                 </div>
 
-                <button type="submit" class="botaoCadastroPessoa h2botao">Editar</button>
+                <button type="submit" class="botaoCadastroPessoa h2botao">updatear</button>
             </form>
         </div>
     </div>

@@ -30,16 +30,17 @@
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 25px;
         }
-        .Corpo2Contato{
+        .Corpo2contact{
             display: flex;
             flex-direction: row;
             align-items: center;
             width: 75%;
+
             height: 900px;
 
         }
 
-        .Corpo1Contato {
+        .Corpo1contact {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -145,6 +146,7 @@
             flex-direction: row;
             align-items: center;
             width: 20%;
+
             height: 900px;
 
         }
@@ -166,6 +168,7 @@
             height: 100px;
             right: 100px;
             bottom: 150px;
+
             background: #F49191;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 25px;
@@ -208,6 +211,7 @@
             background-color: #2b2b2b;
         }
 
+
         footer {
             position: fixed;
             bottom: 0;
@@ -245,6 +249,7 @@
             padding: 0px;
             width: 100%;
             height: auto;
+
             background-color: #6c6c6c;
         }
     </style>
@@ -254,7 +259,7 @@
 <body>
     @yield('content')
     <footer>
-        <p class=copyright> Desenvolvido por FILIPE CONTE ZULIAN, como teste para a empresa MAGAZORD &copy; 2023 </p>
+        <p class=copyright> Desenvolvido por Reinaldo Flaviano,&copy; 2023 </p>
     </footer>
 </body>
 

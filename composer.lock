@@ -5668,13 +5668,12 @@
             ],
             "authors": [
                 {
-                    "name": "Filipe Dobreira",
-                    "homepage": "https://github.com/filp",
+                    "name": "Reinaldo flaviano",
+                    "homepage": "https://github.com/cortezcodar",
                     "role": "Developer"
                 }
             ],
             "description": "php error handling for cool kids",
-            "homepage": "https://filp.github.io/whoops/",
             "keywords": [
                 "error",
                 "exception",

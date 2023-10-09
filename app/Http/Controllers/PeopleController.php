@@ -7,18 +7,14 @@ use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
 
-class PessoaController extends Controller
+class PeopleController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $pessoas = Pessoa::all();
-        return view('home', compact('pessoas'));
-    }
-
-    /**
+        $people = Pessoa::all();update
      * Show the form for creating a new resource.
      */
     public function create()
@@ -32,13 +28,13 @@ class PessoaController extends Controller
     public function store(Request $request)
     {
         $regras = [
-            'cpf' => 'required|unique:pessoas|digits:11',
+            'cpf' => 'required|unique:people|digits:11',
             'nome' => 'required|min:3|max:50|regex:/^[a-zA-Z ]+$/'
         ];
 
         $msgPersonalizada = [
             'cpf.required' => 'O campo CPF deve ser preenchido.',
-            'nome.required' => 'O campo nome deve ser preenchido.',
+            'nome.required' => 'O campo nome deve ser preenchido.',Controll
             'nome.min' => 'O campo nome precisa ter no mínimo :min caracteres.',
             'nome.max' => 'O campo nome não pode ter mais de :max caracteres.',
             'nome.regex' => 'O campo nome deve conter apenas letras.',
@@ -49,7 +45,7 @@ class PessoaController extends Controller
         
         Pessoa::create($request->all());
 
-        return redirect()->route('pessoas.index');
+        return redirect()->route('people.index');
     }
 
     /**
@@ -64,19 +60,19 @@ class PessoaController extends Controller
 
         $search_text = $_GET['search'];
 
-        $pessoas = Pessoa::where('nome','LIKE','%' .$search_text.'%')->get();
+        $people = Pessoa::where('nome','LIKE','%' .$search_text.'%')->get();
 
-        return view('home', compact('pessoas'));
+        return view('home', compact('people'));
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for updateing the specified resource.
      */
-    public function edit( $id)
+    public function update( $id)
     {
         $pessoa = Pessoa::find($id);
         $pessoaupper= strtoupper($pessoa->nome);
-        return view('PessoaView.edit', compact('pessoa', 'pessoaupper'));
+        return view('PessoaView.update', compact('pessoa', 'pessoaupper'));
 
     }
 
@@ -91,7 +87,7 @@ class PessoaController extends Controller
 
         $pessoa->update();
 
-        return redirect()->route('pessoas.index');
+        return redirect()->route('people.index');
     }
 
     /**
@@ -99,7 +95,7 @@ class PessoaController extends Controller
      */
     public function delete($id){
         Pessoa::where('id', $id)->delete();
-       return redirect('/pessoas');
+       return redirect('/people');
     }
     
     public function destroy(string $id)

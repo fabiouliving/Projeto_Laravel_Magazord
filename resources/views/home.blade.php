@@ -8,11 +8,11 @@
     <div class="container">
         <header>
             <img src="/images/logo.png" alt="" class="logo">
-            <p class="headerText">CONSULTA DE PESSOAS</p>
+            <p class="headerText">CONSULTA DE people</p>
 
         </header>
     </div>
-    <div class="CorpoConsulta">
+    <div class="CorpoConsulta">pessoa
         <div class="Corpo1">
             <form type="get" action="{{url('/search')}}">
                 <input class="formText seperate form-control" style="padding-right: 5px;" type="text" name="search" type="search" placeholder="Pesquisar por nome">
@@ -21,7 +21,7 @@
                 </button>
             </form>
             <div class="botaoCadastroPessoa">
-                <a href="{{ route('pessoas.create') }}" class="h2botao" id="CadastroPessoa">
+                <a href="{{ route('people.create') }}" class="h2botao" id="CadastroPessoa">
                     Cadastrar
                 </a>
             </div>
@@ -37,33 +37,33 @@
                             <th scope="col" class="tableText" style="font-size: 30px; position: sticky; top: 0; background-color: #F49191">CPF</th>
                             <th scope="col" class="tableText" style="font-size: 30px; position: sticky; top: 0; background-color: #F49191">OPERAÇÕES
                             </th>
-                            <th scope="col" class="tableText" style="font-size: 30px; position: sticky; top: 0; background-color: #F49191">CONTATOS
+                            <th scope="col" class="tableText" style="font-size: 30px; position: sticky; top: 0; background-color: #F49191">contact
                             </th>
                         </tr>
                     </thead>
                     <tbody style="overflow-x: auto;">
-                        @foreach ($pessoas as $pessoa)
+                        @foreach ($people as $people)
                         @method('delete')
                         <tr>
-                            <td class="tableText">{{ $pessoa->id }}</td>
-                            <td class="tableText">{{ $pessoa->nome }}</td>
-                            <td class="tableText">{{ $pessoa->cpf }}</td>
+                            <td class="tableText">{{ $people->id }}</td>
+                            <td class="tableText">{{ $people->nome }}</td>
+                            <td class="tableText">{{ $people->cpf }}</td>
                             <td class="tableText">
                                 <button class="btn btn-success btn-sm">
-                                    <a href="{{url('edit/'.$pessoa['id'])}}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
-                                        EDITAR
+                                    <a href="{{url('update/'.$people['id'])}}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
+                                        updateAR
                                     </a>
                                 </button>
                                 <button class="btn btn-danger btn-sm">
-                                    <a href="{{ url('delete/' . $pessoa['id']) }}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
+                                    <a href="{{ url('delete/' . $people['id']) }}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
                                         APAGAR
                                     </a>
                                 </button>
                             </td>
                             <td>
                                 <button class="btn btn-dark" style="display: block; margin: auto;">
-                                    <a href="{{ url('contatos/' . $pessoa['id']) }}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
-                                        CONTATOS
+                                    <a href="{{ url('contact/' . $people['id']) }}" style="color: #fafafa; font-weight:400; text-decoration: none; font-size:30px;">
+                                        contact
                                     </a>
                                 </button>
                             </td>

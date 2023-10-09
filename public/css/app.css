@@ -1,7 +1,7 @@
 *{
     font-family: 'Roboto';
 }
-.Corpo2Contato{
+.Corpo2contact{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,7 +10,7 @@
 
 }
 
-.Corpo1Contato {
+.Corpo1contact {
     display: flex;
     flex-direction: row;
     align-items: center;
