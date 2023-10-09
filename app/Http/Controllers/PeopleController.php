@@ -6,7 +6,7 @@ use App\Models\Pessoa;
 use App\Models\User;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Request;
-
+$people
 class PeopleController extends Controller
 {
     /**
@@ -14,7 +14,10 @@ class PeopleController extends Controller
      */
     public function index()
     {
-        $people = Pessoa::all();update
+        $people = Pessoa::all();
+        return view('home', compact('pessoas'));
+    }
+     /*update
      * Show the form for creating a new resource.
      */
     public function create()
@@ -42,7 +45,7 @@ class PeopleController extends Controller
         ];
 
         $request->validate($regras, $msgPersonalizada);
-        
+
         Pessoa::create($request->all());
 
         return redirect()->route('people.index');
@@ -97,9 +100,9 @@ class PeopleController extends Controller
         Pessoa::where('id', $id)->delete();
        return redirect('/people');
     }
-    
+
     public function destroy(string $id)
     {
-       
+
     }
 }

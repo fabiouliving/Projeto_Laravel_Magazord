@@ -4,11 +4,11 @@
 
 @section ('content')
 
-<body>
+<body>people
     <div class="container">
         <header>
             <img src="/images/logo.png" alt="" class="logo">
-            <p class="headerText">CADASTRO DE people</p>
+            <p class="headerText">CADASTRO DE PEOPLE</p>
 
         </header>
     </div>
@@ -22,9 +22,9 @@
             <form method="POST" action="{{route('people.store')}}">
                 @csrf
                 <div class="form-group">
-                    <label for="nome" class="formText seperate" style="font-weight: 750;">Nome:</label>
+                    <label for="nome" class="formText seperate" style="font-weight: 750;">Name:</label>
                     <input type="text" id="nome" class="form-control formText seperate" placeholder="Maximo de 50 Caracteres" name="nome">
-                    <span class="formText" style="color:#F49191">{{ $errors->has('nome') ? $errors->first('nome') : ''}}</span>
+                    <span class="formText" style="color:#F49191">{{ $errors->has('name') ? $errors->first('name') : ''}}</span>
                 </div>
 
                 <div class="form-group">

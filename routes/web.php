@@ -19,6 +19,6 @@ Route::get('/search', [App\Http\Controllers\PessoaController::class, 'search'])-
 
 Route::get('/contact/create/{id}', [App\Http\Controllers\contactController::class, 'create'])->name('contact.create');
 Route::get('/contact/{id}', [App\Http\Controllers\contactController::class, 'index'])->name('contact.index');
-Route::post('/contact', [App\Http\Controllers\contactController::class, 'store'])->name('contact.store');    
+Route::post('/contact', [App\Http\Controllers\contactController::class, 'store'])->name('contact.store');
 Route::get('/deletecontact/{id}', [App\Http\Controllers\contactController::class, 'delete'])->name('contact.delete');
 Route::get('/updatecontact/{id_contact}', [App\Http\Controllers\contactController::class, 'update'])->name('contact.update');

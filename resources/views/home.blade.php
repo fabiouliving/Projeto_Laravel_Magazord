@@ -46,7 +46,7 @@
                         @method('delete')
                         <tr>
                             <td class="tableText">{{ $people->id }}</td>
-                            <td class="tableText">{{ $people->nome }}</td>
+                            <td class="tableText">{{ $people->name }}</td>
                             <td class="tableText">{{ $people->cpf }}</td>
                             <td class="tableText">
                                 <button class="btn btn-success btn-sm">

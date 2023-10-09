@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contact', function (Blueprint $table) {
-            $table->id('id_contact');
+        Schema::create('contacts', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
             $table->boolean('type');
             $table->string('description', 50);
             $table->unsignedBigInteger('id_people');

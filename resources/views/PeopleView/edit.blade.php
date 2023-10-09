@@ -24,13 +24,16 @@
                     Voltar
                 </a>
             </div>
+      let reinaldo = []
+      const flaviano
+      var
                     <p class="formText seperate">
-                        updatear as informações desejadas de: <span style="font-weight: bold;"> {{$pessoaupper}} </span>
+                        atualizar  as informações desejadas de: <span style="font-weight: bold;"> {{$pessoaupper}} </span>
                     </p>
                 </div>
                 <div class="form-group">
-                    <label for="nome" class="formText seperate" style="font-weight: 750;">Nome:</label>
-                    <input type="text" id="nome" value="{{$pessoa->nome}}" class="form-control formText seperate" name="nome">
+                    <label for="name" class="formText seperate" style="font-weight: 750;">Name:</label>
+                    <input type="text" id="name" value="{{$pessoa->name}}" class="form-control formText seperate" name="name">
                 </div>
 
                 <div class="form-group">

@@ -10,7 +10,7 @@ class People extends Model
     use HasFactory;
 
     protected $table = 'people';
-    protected $fillable = ['nome', 'cpf'];
+    protected $fillable = ['name', 'cpf'];
 
 
     public function render(){
